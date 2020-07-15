@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html  >
+    
+    <head>
+     
+  
+  <style>
+      
+body{
+ background: #4D5656;
+ 
+ 
+}
+
+
+#chat{
+     color: #FDFEFE;
+}
+
+  </style>   
+
+   
+        
+        
+    </head>
+   
+    <body >
+
+        
+<h1 id="chat">Chat with robot !</h1>      
+   
+
+ <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "4b16e4fe-4cb8-4d8c-9dfe-9affad7c6b6d", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "0c45e6e8-98e6-41e0-97b3-14c661562f47", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+     
+    
+  </body>    
+      
+      
+
+       
+
+    
+    </html>
